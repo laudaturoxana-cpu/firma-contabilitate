@@ -25,17 +25,6 @@ const RoxanaBannerFinal = () => {
         <div className="max-w-5xl mx-auto">
           {/* Decorative Top Border */}
           <div className="border-t-2 border-b-2 border-white/30 py-12">
-            {/* Icon */}
-            <motion.div
-              initial={{ scale: 0, rotate: -180 }}
-              whileInView={{ scale: 1, rotate: 0 }}
-              viewport={{ once: true }}
-              transition={{ type: 'spring', duration: 0.8 }}
-              className="text-7xl text-center mb-8"
-            >
-              🚀
-            </motion.div>
-
             {/* Title */}
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
