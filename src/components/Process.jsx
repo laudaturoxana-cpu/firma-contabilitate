@@ -61,7 +61,7 @@ const Process = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-accent"></div>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-10 md:gap-12 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 relative z-10">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
@@ -69,7 +69,7 @@ const Process = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15 }}
-                className="relative"
+                className="relative w-full"
               >
                 {/* Step Number Circle */}
                 <div className="flex justify-center mb-6">
