@@ -57,11 +57,11 @@ const Process = () => {
         {/* Steps */}
         <div className="relative">
           {/* Connection Line - Hidden on mobile */}
-          <div className="hidden md:block absolute top-24 left-0 right-0 h-1 bg-border z-0">
+          <div className="hidden md:block absolute top-20 left-0 right-0 h-1 bg-border z-0">
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-accent"></div>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8 relative z-10">
+          <div className="grid md:grid-cols-4 gap-10 md:gap-12 relative z-10">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
@@ -81,12 +81,12 @@ const Process = () => {
                 </div>
 
                 {/* Card */}
-                <div className="bg-white rounded-xl p-6 shadow-premium hover:shadow-premium-hover transition-all duration-300 h-full">
+                <div className="bg-white rounded-xl p-6 shadow-premium hover:shadow-premium-hover transition-all duration-300 h-full min-h-[320px] flex flex-col">
                   <div className="text-4xl mb-4 text-center">{step.icon}</div>
-                  <h3 className="text-lg font-sans font-bold text-text-primary mb-3 text-center">
+                  <h3 className="text-base md:text-lg font-sans font-bold text-text-primary mb-3 text-center">
                     {step.title}
                   </h3>
-                  <p className="text-text-secondary text-sm leading-relaxed text-center">
+                  <p className="text-text-secondary text-xs md:text-sm leading-relaxed text-center flex-grow">
                     {step.description}
                   </p>
                 </div>
