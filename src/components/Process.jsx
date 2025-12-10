@@ -81,7 +81,7 @@ const Process = () => {
                 </div>
 
                 {/* Card */}
-                <div className="bg-white rounded-xl p-6 shadow-premium hover:shadow-premium-hover transition-all duration-300 h-full min-h-[320px] flex flex-col">
+                <div className="bg-white rounded-xl p-6 shadow-premium hover:shadow-premium-hover transition-all duration-300 flex flex-col">
                   <div className="text-4xl mb-4 text-center">{step.icon}</div>
                   <h3 className="text-base md:text-lg font-sans font-bold text-text-primary mb-3 text-center">
                     {step.title}
